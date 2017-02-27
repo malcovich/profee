@@ -33,7 +33,6 @@
       $scope.delete = function(id){
         TaskFactory.changeStatus(id, 0).then(function(res){
           $scope.list =  $scope.list.filter(function(i){
-            console.log(i.name,res.data._id, i._id !== res.data._id)
             return i._id !== res.data._id;
           })
         }, function(err){

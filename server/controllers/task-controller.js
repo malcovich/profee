@@ -9,7 +9,7 @@ module.exports.add = function(req, res){
 }
 
 module.exports.list = function(req, res){
-	Task.find({$and: [{ userId : req.param('user_id')},{type: req.param('type')}]}, function (err, result) {
+	Task.find({$and: [{ userId : req.param('user_id')},{type: req.param('type')}, { status: { $ne: 0 }}]}, function (err, result) {
        res.json(result);
     });
 }
@@ -24,7 +24,6 @@ module.exports.changeStatus = function(req,res){
 				if (err) {
                 res.status(500).send(err)
 				}
-				console.log(updatedObj)
 				res.send(updatedObj);
 			})
 		};
