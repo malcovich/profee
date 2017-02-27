@@ -1,14 +1,10 @@
 <div class="row years">
     <h1 class="task-title">Задачи на {{header}}</h1>
-
-    
 </div>
 <div class="row">
 	<ul class="list">
-	<li ng-repeat="item in list">
-		{{item.name}}
-		{{item.description}}
-		<div class="btn" ng-click="delete(item._id)">Delete</div>
+	<li ng-repeat="item in list" task item="item" >
+
 	</li>
 </ul>
 </div>

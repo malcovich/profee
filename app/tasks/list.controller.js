@@ -30,15 +30,7 @@
         console.log('err',err)
       });
 
-      $scope.delete = function(id){
-        TaskFactory.changeStatus(id, 0).then(function(res){
-          $scope.list =  $scope.list.filter(function(i){
-            return i._id !== res.data._id;
-          })
-        }, function(err){
-          console.log(err)
-        })
-      }
+      
 
       function setHeader(str){
         $scope.header = str;
