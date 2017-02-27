@@ -8,6 +8,7 @@
 	<li ng-repeat="item in list">
 		{{item.name}}
 		{{item.description}}
+		<div class="btn" ng-click="delete(item._id)">Delete</div>
 	</li>
 </ul>
 </div>

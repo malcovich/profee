@@ -13,3 +13,20 @@ module.exports.list = function(req, res){
        res.json(result);
     });
 }
+
+module.exports.changeStatus = function(req,res){
+	Task.findById(req.param('id'), function(err, doc){
+		 if (err) {
+			res.status(500).send(err);
+		} else {
+			doc.status = req.param('status');
+			doc.save(function(err, updatedObj){
+				if (err) {
+                res.status(500).send(err)
+				}
+				console.log(updatedObj)
+				res.send(updatedObj);
+			})
+		};
+	});
+}

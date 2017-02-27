@@ -36,6 +36,7 @@ app.get('/api/global', globalController.item);
 
 app.post('/api/task/add', taskController.add);
 app.get('/api/task/list', taskController.list);
+app.put('/api/task/changeStatus', taskController.changeStatus);
 
 app.post('/api/predefined/addPhoto', multipartMiddleware, predefinedController.addPhoto);
 app.post('/api/predefined/add', predefinedController.add);
