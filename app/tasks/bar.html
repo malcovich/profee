@@ -1,0 +1,28 @@
+<div class="container bar">
+    <div class="row">
+        <div class="col-lg-8">
+            <div ui-view></div>
+        </div>
+        <div class="col-lg-4">
+            <div class="bar-inner">
+                <h2 class="bar-title">Добавить задачу:</h2>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="text" ng-model="newTask.name" class="form-control" placeholder="Название">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <textarea ng-model="newTask.description" class="form-control" placeholder="Описание"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="text" ng-model="newTask.type" class="form-control">
+                    </div>
+                </div>
+                <button class="btn green-btn" ng-click="add()">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>

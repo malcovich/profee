@@ -1,0 +1,145 @@
+
+body {
+	margin-top: 105px;
+	font-family: 'PT Sans', sans-serif;
+	background-color: #ecf0f1;
+}
+/***Global**/
+.pd_15{
+	padding: 15px;
+}
+.navbar {
+	height: 105px;
+}
+.logo {
+	font-size: 28px;
+	line-height: 105px;
+	color:#27ae61;
+	text-decoration: none;
+	float:left;
+}
+.logo:hover {
+	color:#27ae61;
+	text-decoration: none;
+}
+.menu {
+	float:left;
+	list-style: none;
+	margin-top:45px;
+	padding-left:30px;
+}
+.menu li {
+	float: left;
+	margin-left: 25px;
+	color:#475766;
+}
+.menu li a {
+	color:#475766;
+	font-size: 16px;
+	text-decoration: none;
+}
+.menu li a:hover{
+	text-decoration: none;
+	color:#27ae61;
+}
+.sub-menu {
+	margin-top:45px;
+	float: right;
+}
+
+.predefined-item{
+	background-color: #fff;
+	padding: 0;
+}
+.predefined-item img {
+	width: 100%;
+}
+
+.global-list .item-img {
+	width:100%;
+	max-height: 180px;
+}
+.global-list .item {
+	list-style: none;
+	margin: 20px 0 20px 0;
+	background-color: #fff;
+}
+
+.global-title {
+	font-size:20px;
+	font-weight: bold;
+	color: #34495e;
+}
+.global-description {
+	color:#475766;
+	font-size: 16px;
+}
+
+.image-wraper {
+	height:390px;
+	width: 100%;
+	overflow: hidden;
+}
+.image-wraper img {
+	width: 100%;
+}
+.bar {
+	padding-top:20px;
+}
+.bar-inner {
+	background-color: #fff;
+	padding: 20px;
+}
+.bar-title {
+	margin-top:0;
+	font-size: 20px;
+	color: #34495e;
+	margin-bottom: 30px;
+}
+.bar .form-control {
+	background-color: #ecf0f1;
+	padding:10px 20px 10px 20px;
+	margin-bottom:20px;
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+}
+.bar input {
+	height: 42px;
+}
+.btn {
+	height: 45px;
+}
+.green-btn {
+	color:#fff;
+	background-color: #27ae61;
+	text-align: center;
+	line-height: 25px;
+	font-size: 15px;
+	padding: 0 20px; 
+}
+.green-btn:hover{
+	color: #fff;
+}
+/** years **/
+.years {
+	padding: 20px;
+	background-color:#fff;
+	margin-bottom: 30px;
+}
+.list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.list li {
+	padding: 15px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.task-title {
+	font-size: 28px;
+	color:#27ae61;
+	font-weight: normal;
+	margin: 0;
+}

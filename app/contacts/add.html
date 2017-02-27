@@ -1,0 +1,25 @@
+<div class="container">
+	<form role="form">
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Имя/ Организация</label>
+	    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Введите имя" ng-model="newContact.name">
+	  </div>
+	   <div class="form-group">
+	    <label for="Spec">Специализация</label>
+	    <input type="text" class="form-control" id="Spec" placeholder="Введите Специализацию" ng-model="newContact.spec">
+	  </div>
+	   <div class="form-group">
+	    <label for="place">Расположение</label>
+	    <input type="text" class="form-control" id="place" placeholder="Где находится" ng-model="newContact.place">
+	  </div>
+	   <div class="form-group">
+	    <label for="raiting">Оценка</label>
+	    <input type="text" class="form-control" id="raiting" placeholder="Поставте оценку" ng-model="newContact.raiting">
+	  </div>
+	   <div class="form-group">
+	    <label for="des">Описание</label>
+	    <textarea  class="form-control" id="des" placeholder="Введите описание" ng-model="newContact.description"></textarea>
+	  </div>
+	  <button ng-click="save()" class="btn">Добавить</button>
+	</form>
+</div>

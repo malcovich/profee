@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="col-lg-6 predefined-item" ng-repeat="item in list">
+            <img ng-src="app/uploads/{{item.img}}" alt="Description"/>
+            <h3>{{item.name}}</h3>
+            <p>{{item.description}}</p>
+            <button class='btn' ng-click="addToTop(item._id)">Add to list</button>
+    </div>
+</div>
