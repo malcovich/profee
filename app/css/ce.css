@@ -1,0 +1,84 @@
+.main-img-block {
+    background: url(1.jpg) 0px -200px;
+    background-size: 100% auto;
+    height:600px;
+}
+.image-title{
+    float :right;
+    text-transform: uppercase;
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin:150px 0
+}
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size:28px;
+    font-weight: bold;
+    margin-top:50px;
+    letter-spacing: 1.5px;
+}
+.new-item img{
+    width: 100%;
+}
+.item-description {
+    font-size:16px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+.item-title{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom:30px;
+}
+.btn {
+    width: 125px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #39adb5;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size:16px;
+    line-height: 26px;
+}
+.item-price{
+    margin-bottom:0;
+    padding-top:5px;
+    float: right;
+    margin-right: 20px;
+}
+.item-price span{
+    font-size: 22px;
+}
+.item  {
+    margin-bottom: 30px;
+    height: 288px;
+    overflow: hidden;
+    position: relative;
+}
+.item img{
+    width: 100%;
+}
+.item .description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 25px 10px 15px;
+    width: 100%;
+    background: rgba(255,255,255, 0.7)
+}
+.item .description .title{
+    font-size:15px;
+    text-align: left;
+    margin: 0 0 0 10px;
+    float:left;
+    line-height: 24px;
+}
+.item .description span {
+    float: right;
+    color: #3badb7;
+    font-weight: bold;
+    font-size: 18px;
+}

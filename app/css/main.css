@@ -1,8 +1,9 @@
 
 body {
-	margin-top: 105px;
+	margin-top: 75px;
 	font-family: 'PT Sans', sans-serif;
-	background-color: #ecf0f1;
+	/*background-color: #ecf0f1;*/
+	background-color:#fffcf5;
 }
 /***Global**/
 .pd_15{
@@ -132,14 +133,40 @@ body {
 	padding: 0;
 	margin: 0;
 }
-.list li {
+.list li>div {
 	padding: 15px;
 	background-color: #fff;
 	margin-bottom: 20px;
+	overflow:hidden;
 }
 .task-title {
 	font-size: 28px;
 	color:#27ae61;
 	font-weight: normal;
 	margin: 0;
+}
+.descriptio-block {
+	float: left;
+}
+.descriptio-block h3 {
+	font-size: 18px;
+	color:#34495e;
+	margin: 0 0 5px 0;
+}
+.descriptio-block p {
+	margin: 0;
+}
+.button-block {
+	float: right;
+}
+.delete {
+	color: red;
+	font-size:18px;
+}
+.done {
+	font-size:18px;
+}
+.list li>div.taskDone {
+	background: #6da885;
+	opacity: 0.5
 }

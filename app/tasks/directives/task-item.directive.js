@@ -8,6 +8,9 @@
         },
         templateUrl: 'app/tasks/directives/task-item.html',
         controller: ['$scope', 'TaskFactory', function($scope, TaskFactory) {
+          if ($scope.item.status == 2) {
+            $scope.taskDone = true;
+          }
           $scope.getTemp = function(city) {
             $scope.delete = function(id){
     	        TaskFactory.changeStatus(id, 0).then(function(res){
@@ -22,7 +25,8 @@
 
           $scope.setTaskDone = function(id){
             TaskFactory.changeStatus(id, 2).then(function(res){
-              $scope.status = "task-done";
+              console.log('done', res)
+              $scope.taskDone = true;
             }, function(err){
               console.log(err)
             });

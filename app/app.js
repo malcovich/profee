@@ -47,31 +47,42 @@
 					templateUrl: "app/admin/predefined/add.html",
 					controller: "addPredefinedController"
 				})
-				.state('listPredefined', {
-					url: "/predefined",
-					templateUrl: "app/predefined/list.html",
-					controller: "predefinedController"
+				.state('commers', {
+					url: "/commers",
+					templateUrl: "app/ce/index.html",
+					controller: "ceController"
 				})
-				.state('tasks', {
-					url: "/tasks",
-					templateUrl: "app/tasks/bar.html",
-					controller: "barController"
+				.state('cots', {
+					url: "/cots",
+					templateUrl: "app/ce/cots.html",
+					controller: "cotsController"
 				})
-				.state('tasks.years', {
-					url: "/years",
-					templateUrl: "app/tasks/list.html",
-					controller: "listController"
-				})
-				.state('tasks.mounths', {
-					url: "/mounths",
-					templateUrl: "app/tasks/list.html",
-					controller: "listController"
-				})
-				.state('tasks.days', {
-					url: "/days",
-					templateUrl: "app/tasks/list.html",
-					controller: "listController"
-				})
+				// .state('listPredefined', {
+				// 	url: "/predefined",
+				// 	templateUrl: "app/predefined/list.html",
+				// 	controller: "predefinedController"
+				// })
+				// .state('tasks', {
+				// 	url: "/tasks",
+				// 	templateUrl: "app/tasks/bar.html",
+				// 	controller: "barController"
+				// })
+				// .state('tasks.years', {
+				// 	url: "/years",
+				// 	templateUrl: "app/tasks/list.html",
+				// 	controller: "listController"
+				// })
+				// .state('tasks.mounths', {
+				// 	url: "/mounths",
+				// 	templateUrl: "app/tasks/list.html",
+				// 	controller: "listController"
+				// })
+				// .state('tasks.days', {
+				// 	url: "/days",
+				// 	templateUrl: "app/tasks/list.html",
+				// 	controller: "listController"
+				// })
+				
 				
 
 

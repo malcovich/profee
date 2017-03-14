@@ -1,4 +1,11 @@
-{{item.name}}
-{{item.description}}
-<div class="btn" ng-click="delete(item._id)">Delete</div>
-<span ng-click="setTaskDone(item._id)">Done</span>
+
+<div ng-class="{taskDone: taskDone}">
+     <div class="button-block">
+        <span class="glyphicon glyphicon-remove delete" ng-click="delete(item._id)"></span>
+        <span ng-click="setTaskDone(item._id)" class="glyphicon glyphicon-ok done"></span>
+    </div>
+    <div class="descriptio-block">
+        <h3>{{item.name}}</h3>
+        <p>{{item.description}}</p>
+    </div>
+</div>
